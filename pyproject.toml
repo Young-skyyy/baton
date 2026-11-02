@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "baton"
+version = "0.1.0"
+description = "Hand one conversation from Codex to DSH (or back) without losing the thread"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+dependencies = []
+
+[project.scripts]
+baton = "baton.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

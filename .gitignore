@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+.tmp/
+*.egg-info/
+dist/
+build/
+.venv/
+
+# Local handoff data must stay out of source control.
+/handoffs/
+/.handoffs/
+/STATE.json

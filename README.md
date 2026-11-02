@@ -15,8 +15,21 @@
 
 告诉当前助手“把任务交给 DSH（或 Codex）”，把生成的接手指令复制给另一端；完成后可以再交回来。
 
+## 安装
+
+需要 Python 3.10+，在项目目录执行：
+
+```bash
+python -m pip install -e .
+baton --help
+```
+
+让助手先阅读[交接指南](docs/agent-handoff.md)。[详细用法](docs/connect-dsh-codex.md) · [测试说明](tests/README.md)
+
 ## 当前进展
 
 已跑通本机双向接手，并在双端受限环境完成验证：121 项测试、15 项集成检查通过。
 
 目前支持本机交接，仍需在目标助手触发一次；不会自动启动另一端或同步整个仓库。
+
+读取 DSH 压缩日志需要 zstandard 或支持 zstd 的 Node.js。MIT License。
